@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="ziQ-6D-cid" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2p6-dq-FUU">
+                        <rect key="frame" x="4" y="4" width="247" height="42"/>
+                        <color key="backgroundColor" red="1" green="0.94655460120000001" blue="0.3164026439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2p6-dq-FUU" firstAttribute="top" secondItem="ziQ-6D-cid" secondAttribute="top" constant="4" id="1Cp-0M-LJR"/>
+                <constraint firstAttribute="trailing" secondItem="2p6-dq-FUU" secondAttribute="trailing" constant="4" id="TcM-Ix-Blr"/>
+                <constraint firstAttribute="bottom" secondItem="2p6-dq-FUU" secondAttribute="bottom" constant="4" id="XpE-tQ-lYd"/>
+                <constraint firstItem="2p6-dq-FUU" firstAttribute="leading" secondItem="ziQ-6D-cid" secondAttribute="leading" constant="4" id="ZKY-AI-ix4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="2wR-sZ-Vhs"/>
+            <size key="customSize" width="255" height="50"/>
+            <connections>
+                <outlet property="labelTitle" destination="2p6-dq-FUU" id="fIz-Xm-9Gl"/>
+            </connections>
+            <point key="canvasLocation" x="83" y="99"/>
+        </collectionViewCell>
+    </objects>
+</document>
